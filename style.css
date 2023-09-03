@@ -205,8 +205,8 @@ nav {
 #mainContent {
   padding-top: 1.5rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 2rem;
 }
 
 #cardContainer {
@@ -257,4 +257,48 @@ nav {
   rotate: -90deg;
 }
 
+#sideInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 11fr;
+  gap: 2rem;
+}
 
+#sideInfo .card {
+  border: none;
+}
+
+.single h4 {
+  margin-bottom: 0.4rem;
+}
+
+line {
+  background-color: var(--accent);
+  width: 90%;
+  height: 1px;
+  align-self: center;
+}
+
+#trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr;
+}
+
+#trending .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#trending .card .trendingUser {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.3rem;
+}
+
+.trendingUser img{
+    width: 20%;
+    object-fit: contain;
+}
